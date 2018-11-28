@@ -47,6 +47,7 @@
 - (NSArray *)loadData {
     NSMutableArray *array = [[NSMutableArray alloc] init];
     [array addObject:@"ALXTextAnimationLabel"];
+    [array addObject:@"ALXPulsatingAnimationView"];
     
     return array;
 }

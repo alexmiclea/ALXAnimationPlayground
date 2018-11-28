@@ -9,14 +9,26 @@
 #import "ALXTextAnimationLabelViewController.h"
 #import "ALXTextAnimationLabel.h"
 
+
+#pragma mark - Private Interface
+
 @interface ALXTextAnimationLabelViewController () <ALXTextAnimationLabelDelegate>
+
+
+#pragma mark - Outlets
 
 @property(nonatomic, weak) IBOutlet ALXTextAnimationLabel *animationLabel;
 @property(nonatomic, weak) IBOutlet UILabel *sizingLabel;
 
 @end
 
+
+#pragma mark - Implementation
+
 @implementation ALXTextAnimationLabelViewController
+
+
+#pragma mark - Lifecycle Methods
 
 - (void)viewDidLoad {
     [super viewDidLoad];

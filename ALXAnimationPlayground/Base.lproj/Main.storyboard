@@ -95,6 +95,79 @@
             </objects>
             <point key="canvasLocation" x="260" y="19"/>
         </scene>
+        <!--Pulsating Animation View Controller-->
+        <scene sceneID="8Qd-Qf-2de">
+            <objects>
+                <viewController storyboardIdentifier="ALXPulsatingAnimationView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bne-ng-Vw8" customClass="ALXPulsatingAnimationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EG4-K9-rw5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKr-6F-R7b" customClass="ALXPulsatingAnimationView">
+                                <rect key="frame" x="87.5" y="243.5" width="200" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_round" translatesAutoresizingMaskIntoConstraints="NO" id="XEw-4z-Bbx">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="IKJ-Ru-obw"/>
+                                            <constraint firstAttribute="width" constant="200" id="Y0I-4l-8Ae"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1aP-Xv-9bz"/>
+                                    <constraint firstItem="XEw-4z-Bbx" firstAttribute="centerY" secondItem="oKr-6F-R7b" secondAttribute="centerY" id="6S0-cq-Ry0"/>
+                                    <constraint firstAttribute="width" constant="200" id="caK-rN-4V3"/>
+                                    <constraint firstItem="XEw-4z-Bbx" firstAttribute="centerX" secondItem="oKr-6F-R7b" secondAttribute="centerX" id="puj-l2-GWE"/>
+                                </constraints>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tih-zt-N2p">
+                                <rect key="frame" x="310" y="40" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="Bne-ng-Vw8" eventType="valueChanged" id="cxP-yG-Poq"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDz-P0-5uo">
+                                <rect key="frame" x="16" y="79" width="343" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="qs6-R2-eDn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animate!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXg-Fd-OQg">
+                                <rect key="frame" x="16" y="45" width="68" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="D2f-kP-aYv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eXg-Fd-OQg" firstAttribute="leading" secondItem="OoC-O6-uVU" secondAttribute="leading" constant="16" id="3Hk-l1-dNw"/>
+                            <constraint firstItem="OoC-O6-uVU" firstAttribute="trailing" secondItem="aDz-P0-5uo" secondAttribute="trailing" constant="16" id="Bv3-wX-9Oq"/>
+                            <constraint firstItem="eXg-Fd-OQg" firstAttribute="top" secondItem="OoC-O6-uVU" secondAttribute="top" constant="25" id="CqK-vy-CdF"/>
+                            <constraint firstItem="tih-zt-N2p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eXg-Fd-OQg" secondAttribute="trailing" constant="8" symbolic="YES" id="EuU-7z-Zph"/>
+                            <constraint firstItem="oKr-6F-R7b" firstAttribute="centerX" secondItem="OoC-O6-uVU" secondAttribute="centerX" id="FnO-ur-Jm0"/>
+                            <constraint firstItem="oKr-6F-R7b" firstAttribute="centerY" secondItem="OoC-O6-uVU" secondAttribute="centerY" id="KjG-kb-Jnk"/>
+                            <constraint firstItem="tih-zt-N2p" firstAttribute="top" secondItem="OoC-O6-uVU" secondAttribute="top" constant="20" id="TkR-9J-weh"/>
+                            <constraint firstItem="aDz-P0-5uo" firstAttribute="leading" secondItem="OoC-O6-uVU" secondAttribute="leading" constant="16" id="W6w-L1-PaE"/>
+                            <constraint firstItem="aDz-P0-5uo" firstAttribute="top" secondItem="tih-zt-N2p" secondAttribute="bottom" constant="8" id="qxt-aE-fp1"/>
+                            <constraint firstItem="OoC-O6-uVU" firstAttribute="trailing" secondItem="tih-zt-N2p" secondAttribute="trailing" constant="16" id="yy5-vK-YK9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OoC-O6-uVU"/>
+                    </view>
+                    <connections>
+                        <outlet property="pulsatingView" destination="oKr-6F-R7b" id="UVL-0J-Xhx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lnh-tq-fsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.60000000000002" y="18.440779610194905"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="aRp-ay-okr">
             <objects>
@@ -112,4 +185,7 @@
             <point key="canvasLocation" x="-1223" y="20"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person_round" width="324" height="324"/>
+    </resources>
 </document>

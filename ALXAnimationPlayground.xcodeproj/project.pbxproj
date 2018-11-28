@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18484CBB21AEA4DD0059A105 /* RootViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 18484CBA21AEA4DD0059A105 /* RootViewControllerDataSource.m */; };
+		18484CBE21AEB8F20059A105 /* ALXPulsatingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18484CBD21AEB8F20059A105 /* ALXPulsatingAnimationView.m */; };
+		18484CC121AEB9520059A105 /* ALXPulsatingAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18484CC021AEB9520059A105 /* ALXPulsatingAnimationViewController.m */; };
 		18D0DBC221AEA1EB008A3BB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D0DBC121AEA1EB008A3BB4 /* AppDelegate.m */; };
 		18D0DBC821AEA1EB008A3BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D0DBC621AEA1EB008A3BB4 /* Main.storyboard */; };
 		18D0DBCA21AEA1ED008A3BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D0DBC921AEA1ED008A3BB4 /* Assets.xcassets */; };
@@ -21,6 +23,10 @@
 /* Begin PBXFileReference section */
 		18484CB921AEA4DD0059A105 /* RootViewControllerDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewControllerDataSource.h; sourceTree = "<group>"; };
 		18484CBA21AEA4DD0059A105 /* RootViewControllerDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewControllerDataSource.m; sourceTree = "<group>"; };
+		18484CBC21AEB8F20059A105 /* ALXPulsatingAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALXPulsatingAnimationView.h; sourceTree = "<group>"; };
+		18484CBD21AEB8F20059A105 /* ALXPulsatingAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALXPulsatingAnimationView.m; sourceTree = "<group>"; };
+		18484CBF21AEB9520059A105 /* ALXPulsatingAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALXPulsatingAnimationViewController.h; sourceTree = "<group>"; };
+		18484CC021AEB9520059A105 /* ALXPulsatingAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALXPulsatingAnimationViewController.m; sourceTree = "<group>"; };
 		18D0DBBD21AEA1EB008A3BB4 /* ALXAnimationPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALXAnimationPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D0DBC021AEA1EB008A3BB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18D0DBC121AEA1EB008A3BB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 				18D0DBD821AEA23C008A3BB4 /* RootTableViewController.m */,
 				18D0DBDA21AEA318008A3BB4 /* ALXTextAnimationLabelViewController.h */,
 				18D0DBDB21AEA318008A3BB4 /* ALXTextAnimationLabelViewController.m */,
+				18484CBF21AEB9520059A105 /* ALXPulsatingAnimationViewController.h */,
+				18484CC021AEB9520059A105 /* ALXPulsatingAnimationViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -114,6 +122,8 @@
 			children = (
 				18D0DBDF21AEA409008A3BB4 /* ALXTextAnimationLabel.h */,
 				18D0DBE021AEA409008A3BB4 /* ALXTextAnimationLabel.m */,
+				18484CBC21AEB8F20059A105 /* ALXPulsatingAnimationView.h */,
+				18484CBD21AEB8F20059A105 /* ALXPulsatingAnimationView.m */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -190,6 +200,8 @@
 			files = (
 				18D0DBD921AEA23C008A3BB4 /* RootTableViewController.m in Sources */,
 				18D0DBDC21AEA318008A3BB4 /* ALXTextAnimationLabelViewController.m in Sources */,
+				18484CBE21AEB8F20059A105 /* ALXPulsatingAnimationView.m in Sources */,
+				18484CC121AEB9520059A105 /* ALXPulsatingAnimationViewController.m in Sources */,
 				18D0DBD021AEA1ED008A3BB4 /* main.m in Sources */,
 				18484CBB21AEA4DD0059A105 /* RootViewControllerDataSource.m in Sources */,
 				18D0DBC221AEA1EB008A3BB4 /* AppDelegate.m in Sources */,
