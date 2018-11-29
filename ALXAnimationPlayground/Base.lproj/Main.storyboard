@@ -77,12 +77,24 @@
                                     <constraint firstItem="fLt-lZ-sIe" firstAttribute="height" secondItem="Mla-JG-oa0" secondAttribute="height" id="ky3-XA-bah"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dh3-KU-mYW">
+                                <rect key="frame" x="138" y="328.5" width="99" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lb6-xn-fBv"/>
+                                </constraints>
+                                <state key="normal" title="Skip Sentence"/>
+                                <connections>
+                                    <action selector="skipSentenceButtonPressed:" destination="f9g-kX-ok3" eventType="touchUpInside" id="exT-Tf-fFU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Mla-JG-oa0" firstAttribute="top" secondItem="lTx-TX-qdD" secondAttribute="top" constant="20" id="6Ks-yE-x5w"/>
+                            <constraint firstItem="Dh3-KU-mYW" firstAttribute="centerY" secondItem="lTx-TX-qdD" secondAttribute="centerY" id="9m1-Td-B0c"/>
                             <constraint firstItem="lTx-TX-qdD" firstAttribute="trailing" secondItem="Mla-JG-oa0" secondAttribute="trailing" constant="16" id="K6h-8G-fpm"/>
                             <constraint firstItem="Mla-JG-oa0" firstAttribute="leading" secondItem="lTx-TX-qdD" secondAttribute="leading" constant="16" id="arQ-LR-hLQ"/>
+                            <constraint firstItem="Dh3-KU-mYW" firstAttribute="centerX" secondItem="lTx-TX-qdD" secondAttribute="centerX" id="wNj-Mm-IKs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lTx-TX-qdD"/>
                     </view>

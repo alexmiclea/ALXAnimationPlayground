@@ -62,6 +62,10 @@
 }
 
 
+- (void)skipToNextSentence {
+    [self trigerNextSentenceWithDelay:0];
+}
+
 #pragma mark - Private Methods
 
 - (void)typeALetter:(NSTimer *)timer {
@@ -70,13 +74,18 @@
         self.text = [self.text stringByAppendingFormat:@"%@", [string substringWithRange:NSMakeRange(self.index, 1)]];
         self.index++;
     } else {
-        [self.timer invalidate];
-        self.index = 0;
-        [self.delegate sentenceCompletedAtIndex:self.sentenceIndex];
-        self.sentenceIndex++;
-        self.timer = nil;
-        [self performSelector:@selector(startAnimation) withObject:nil afterDelay:self.intervalBetweenSentences];
+        [self trigerNextSentenceWithDelay:self.intervalBetweenSentences];
     }
+}
+
+
+- (void)trigerNextSentenceWithDelay:(int)delay {
+    [self.timer invalidate];
+    self.index = 0;
+    [self.delegate sentenceCompletedAtIndex:self.sentenceIndex];
+    self.sentenceIndex++;
+    self.timer = nil;
+    [self performSelector:@selector(startAnimation) withObject:nil afterDelay:delay];
 }
 
 @end

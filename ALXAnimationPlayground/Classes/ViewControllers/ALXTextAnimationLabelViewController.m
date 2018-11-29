@@ -41,6 +41,13 @@
 }
 
 
+#pragma mark - Actions
+
+- (IBAction)skipSentenceButtonPressed:(UIButton *)sender {
+    [self.animationLabel skipToNextSentence];
+}
+
+
 #pragma mark - ALXTextAnimationLabelDelegate Methods
 
 - (void)startingSentenceAtIndex:(int)index {

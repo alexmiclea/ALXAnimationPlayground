@@ -30,5 +30,6 @@
 - (void)setSentences:(NSArray *)sentences;
 - (NSString *)getSentenceAtIndex:(int)index;
 - (void)startAnimation;
+- (void)skipToNextSentence;
 
 @end
